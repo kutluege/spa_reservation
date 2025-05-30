@@ -1,0 +1,54 @@
+/* ---------- Base Reset ---------- */
+*,
+*::before,
+*::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background:#fafafa;
+  color:#222;
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  text-align:center;
+  padding:4rem 1rem 5rem;
+  background:linear-gradient(180deg,#8bcac1 0%,#a8d9d1 100%);
+  color:#fff;
+}
+.hero__logo   { width:180px; height:auto; margin-bottom:1.5rem; }
+.hero__title  { font-size:clamp(2rem,5vw,2.8rem); }
+.hero__subtitle {
+  margin:1rem auto 2rem;
+  max-width:460px;
+  font-size:1.125rem;
+  line-height:1.45;
+}
+.hero__cta {
+  display:inline-block;
+  padding:.9rem 2rem;
+  font-size:1.125rem;
+  color:#fff;
+  background:#222;
+  border-radius:50px;
+  text-decoration:none;
+  transition:background .25s ease;
+}
+.hero__cta:hover { background:#444; }
+
+/* ---------- Footer ---------- */
+.footer {
+  margin-top:auto;
+  padding:2.5rem 1rem;
+  text-align:center;
+  font-size:.9rem;
+  color:#6b6b6b;
+}
+
+/* ---------- Responsive tweak ---------- */
+@media (min-width:768px){
+  .hero{padding:6rem 1rem 7rem;}
+}
